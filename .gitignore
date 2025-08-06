@@ -1,0 +1,30 @@
+# Build artifacts
+bin/
+obj/
+*.exe
+*.dll
+*.pdb
+
+# Visual Studio
+.vs/
+.vscode/
+
+# Temporary files
+*.tmp
+*.temp
+*.log
+
+# Windows thumbnails
+Thumbs.db
+ehthumbs.db
+
+# System files
+.DS_Store
+*.swp
+*.swo
+
+# PowerShell execution logs
+*.ps1.log
+
+# Keep the main executable
+!WindowCenterApp/AutoCenterMinimal.exe
