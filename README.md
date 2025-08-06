@@ -1,6 +1,24 @@
 # 🖥️ WindowsSearchOptimizer
 **Bộ công cụ tối ưu Windows Search**
 
+> 🚀 **Ready-to-use version**: [Download latest release](../../releases/latest) - Extract và chạy ngay!  
+> 🔧 **Developer version**: Clone repo này và build từ source
+
+## 📦 Download Options
+
+### 🎯 Cho End User (Khuyến nghị)
+- **Download**: [WindowsSearchOptimizer-Ready-v2025.1.1.zip](../../releases/latest)
+- **Dung lượng**: ~5MB  
+- **Bao gồm**: File exe đã build sẵn, chạy ngay
+- **Cài đặt**: Extract → Chạy `setup-everything.bat` as Admin
+
+### 🔧 Cho Developer  
+- **Clone**: `git clone https://github.com/Ji-Eung/WindowsSearchOptimizer.git`
+- **Cần build**: Chạy `WindowCenterApp/build/build.bat` trước
+- **Contribute**: PRs welcome!
+
+---
+
 ## 📋 Tổng quan
 
 Bộ công cụ gồm 2 ứng dụng giúp tối ưu trải nghiệm sử dụng Windows:
@@ -45,7 +63,15 @@ Windows/
 ## 🚀 Hướng dẫn cài đặt nhanh
 
 ### ⚠️ **Lưu ý quan trọng:**
-**WindowCenterApp cần build từ source code do GitHub file size limit**
+
+#### 📦 End User - Download ready-to-use:
+- **[Download ZIP file](../../releases/latest)** → Extract → Run `setup-everything.bat` as Admin
+- File exe đã build sẵn, không cần .NET SDK
+
+#### 🔧 Developer - Build từ source:
+- Clone repo này
+- **Cần .NET 8.0 SDK** để build WindowCenterApp  
+- Chạy `WindowCenterApp/build/build.bat` trước khi setup
 
 ### Cách 1: Setup toàn bộ (Recommended)
 ```cmd
@@ -171,7 +197,7 @@ cd SearchOptimizer
 - **License:** Free for personal use
 - **Made with:** PowerShell, C#, Windows API
 - **Compatibility:** Windows 10/11
-- **Version:** 2025.1
+- **Version:** 2025.1.1
 
 ---
 # 🎯 Mục tiêu: Làm cho Windows đẹp hơn, gọn hơn, tiện hơn!

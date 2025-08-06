@@ -1,13 +1,54 @@
-# Build artifacts
+# Visual Studio
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+.vs/
+.vscode/
 bin/
 obj/
+
+# Build results
+[Dd]ebug/
+[Rr]elease/
+x64/
+x86/
+build/*/
+!build/*.bat
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Temporary files
+*.tmp
+*.temp
+*.log
+
+# .NET
 *.exe
 *.dll
 *.pdb
+project.lock.json
+project.fragment.lock.json
+artifacts/
 
-# Visual Studio
-.vs/
-.vscode/
+# Exclude large executables (users need to build or download release)
+# Comment out the line below if you want to include AutoCenterMinimal.exe
+# AutoCenterMinimal.exe
+
+# Package files
+*.nupkg
+*.snupkg
+
+# Cache
+*.cache
+*.assets.cache
+
+# Windows Search Optimizer specific
+*.bak
+*.old
 
 # Temporary files
 *.tmp
