@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # 🖥️ Windows Desktop Enhancement Suite
 **Bộ công cụ tối ưu trải nghiệm Windows Desktop**
 
@@ -155,3 +156,7 @@ cd SearchOptimizer
 
 ---
 **🎯 Mục tiêu: Làm cho Windows đẹp hơn, gọn hơn, tiện hơn!**
+=======
+# WindowsSearchOptimizer
+Bộ công cụ giúp thu gọn giao diện tìm kiếm và tự động căn giữa Start Menu, tối ưu trải nghiệm Windows gọn gàng và tiện lợi.
+>>>>>>> d95763fab94a0e04a30683c2e75e884e755b0272
