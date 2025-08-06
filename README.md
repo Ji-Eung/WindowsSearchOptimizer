@@ -1,15 +1,14 @@
-<<<<<<< HEAD
-# 🖥️ Windows Desktop Enhancement Suite
-**Bộ công cụ tối ưu trải nghiệm Windows Desktop**
+# 🖥️ WindowsSearchOptimizer
+**Bộ công cụ tối ưu Windows Search**
 
-## 📋 Tổng quan / Overview
+## 📋 Tổng quan
 
 Bộ công cụ gồm 2 ứng dụng giúp tối ưu trải nghiệm sử dụng Windows:
 
 1. **🔍 SearchOptimizer** - Tối ưu Windows Search (giữ lại web search)
 2. **🎯 WindowCenterApp** - Tự động căn giữa Start Menu và Search
 
-## 🎯 Mục tiêu / Goals
+## 🎯 Mục tiêu
 
 - ✅ **Giao diện gọn gàng** - Taskbar search chỉ hiển thị icon
 - ✅ **Giữ tiện ích** - Vẫn có web search và browser integration  
@@ -17,7 +16,7 @@ Bộ công cụ gồm 2 ứng dụng giúp tối ưu trải nghiệm sử dụng
 - ✅ **Dễ sử dụng** - Setup đơn giản, chạy tự động
 - ✅ **Có thể khôi phục** - Dễ dàng quay về cài đặt gốc
 
-## 📁 Cấu trúc dự án / Project Structure
+## 📁 Cấu trúc dự án
 
 ```
 Windows/
@@ -43,7 +42,7 @@ Windows/
         └── build.bat
 ```
 
-## 🚀 Hướng dẫn cài đặt nhanh / Quick Setup
+## 🚀 Hướng dẫn cài đặt nhanh
 
 ### ⚠️ **Lưu ý quan trọng:**
 **WindowCenterApp cần build từ source code do GitHub file size limit**
@@ -83,23 +82,23 @@ Right-click/Chuột phải "run-as-admin.bat" → "Run as administrator"
 Right-click/Chuột phải "uninstall-everything.bat" → "Run as administrator"
 ```
 
-## ✅ Tính năng tổng hợp / Combined Features
+## ✅ Tính năng tổng hợp
 
-### 🔍 Search Optimization (SearchOptimizer):
+### 🔍 Tối ưu Search (SearchOptimizer):
 - ✅ **Compact taskbar** - Search icon thay vì search box
 - ✅ **Web search enabled** - Vẫn search được web
 - ✅ **Browser integration** - Mở kết quả trực tiếp browser
 - ✅ **Cortana disabled** - Tắt tính năng phiền toái
 - ✅ **Privacy balanced** - Cân bằng privacy và tiện ích
 
-### 🎯 Auto-Centering (WindowCenterApp):
+### 🎯 Tự động căn giữa (WindowCenterApp):
 - ✅ **Start Menu centering** - Tự động căn giữa Start Menu
 - ✅ **Search centering** - Tự động căn giữa Windows Search
 - ✅ **Multi-monitor support** - Hỗ trợ nhiều màn hình
 - ✅ **Manual controls** - Có thể căn giữa thủ công
 - ✅ **System tray interface** - Giao diện tối giản
 
-## 🎬 Demo / Cách hoạt động
+## 🎬 Demo và cách hoạt động
 
 **Trước khi dùng:**
 - Taskbar có search box to, chiếm chỗ
@@ -114,7 +113,7 @@ Right-click/Chuột phải "uninstall-everything.bat" → "Run as administrator"
 - Không còn Cortana
 - Vẫn search web được bình thường
 
-## ⚙️ Cài đặt nâng cao / Advanced Settings
+## ⚙️ Cài đặt nâng cao
 
 ### Tùy chỉnh Search Optimizer:
 ```powershell
@@ -130,7 +129,7 @@ Right-click/Chuột phải "uninstall-everything.bat" → "Run as administrator"
 - "Manual Center" để căn giữa thủ công
 - "Show Debug Info" để kiểm tra hoạt động
 
-## 🔄 Gỡ bỏ / Uninstall
+## 🔄 Gỡ bỏ và khôi phục
 
 ### Khôi phục Search Optimizer:
 ```powershell
@@ -142,19 +141,19 @@ cd SearchOptimizer
 - Right-click system tray icon → "Exit"
 - Hoặc kill process "AutoCenterMinimal.exe"
 
-## ⚠️ Yêu cầu hệ thống / Requirements
+## ⚠️ Yêu cầu hệ thống
 
 - **OS:** Windows 10/11
 - **Privileges:** Administrator rights
 - **Framework:** .NET 8.0 SDK (để build WindowCenterApp)
 - **PowerShell:** 5.1+ (cho SearchOptimizer)
 
-### 📋 **Setup Requirements:**
+### 📋 Yêu cầu setup:
 1. **Install .NET 8.0 SDK** từ [Microsoft .NET](https://dotnet.microsoft.com/download)
 2. **Chạy build.bat** để tạo AutoCenterMinimal.exe
 3. **Run as Administrator** cho tất cả scripts
 
-## 🆘 Hỗ trợ / Support
+## 🆘 Hỗ trợ
 
 **Vấn đề thường gặp:**
 
@@ -175,8 +174,4 @@ cd SearchOptimizer
 - **Version:** 2025.1
 
 ---
-**🎯 Mục tiêu: Làm cho Windows đẹp hơn, gọn hơn, tiện hơn!**
-=======
-# WindowsSearchOptimizer
-Bộ công cụ giúp thu gọn giao diện tìm kiếm và tự động căn giữa Start Menu, tối ưu trải nghiệm Windows gọn gàng và tiện lợi.
->>>>>>> d95763fab94a0e04a30683c2e75e884e755b0272
+# 🎯 Mục tiêu: Làm cho Windows đẹp hơn, gọn hơn, tiện hơn!
