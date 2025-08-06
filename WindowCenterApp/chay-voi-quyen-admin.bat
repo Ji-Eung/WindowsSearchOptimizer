@@ -1,6 +1,5 @@
 @echo off
 echo ===============================================
-echo   AutoCenter Minimal - Administrator Mode
 echo   Tu dong can giua Start Menu va Windows Search
 echo ===============================================
 echo.
@@ -8,15 +7,12 @@ echo.
 REM Check if running as admin
 net session >nul 2>&1
 if %errorLevel% == 0 (
-    echo ✅ Running with Administrator privileges
-    echo Dang chay voi quyen Administrator
+    echo ✅ Dang chay voi quyen Administrator
     echo.
     goto :run_app
 ) else (
-    echo ❌ Administrator privileges required
-    echo Can quyen Administrator
+    echo ❌ Can quyen Administrator
     echo.
-    echo Right-click this file and select "Run as administrator"
     echo Nhap chuot phai file nay va chon "Run as administrator"
     echo.
     pause

@@ -1,203 +1,96 @@
-# 🖥️ WindowsSearchOptimizer
-**Bộ công cụ tối ưu Windows Search**
+# 🖥️ Tối ưu Windows Search và Desktop
+**Bộ công cụ tối ưu Windows cho người Việt**
 
-> 🚀 **Ready-to-use version**: [Download latest release](../../releases/latest) - Extract và chạy ngay!  
-> 🔧 **Developer version**: Clone repo này và build từ source
+> 🚀 **Tải về sẵn sàng**: [Download phiên bản mới nhất](../../releases/latest) - Giải nén và chạy ngay!
 
-## 📦 Download Options
+## 🎯 Tính năng chính
 
-### 🎯 Cho End User (Khuyến nghị)
-- **Download**: [WindowsSearchOptimizer-Ready-v2025.1.1.zip](../../releases/latest)
-- **Dung lượng**: ~5MB  
-- **Bao gồm**: File exe đã build sẵn, chạy ngay
-- **Cài đặt**: Extract → Chạy `setup-everything.bat` as Admin
+### 🔍 Tối ưu Windows Search
+- ✅ **Taskbar gọn gàng** - Chỉ hiển thị icon thay vì ô search to
+- ✅ **Vẫn search web được** - Giữ nguyên tính năng tìm kiếm web
+- ✅ **Tắt Cortana** - Không còn bị làm phiền
+- ✅ **Bảo mật hợp lý** - Cân bằng privacy và tiện ích
 
-### 🔧 Cho Developer  
+### 🎯 Tự động căn giữa cửa sổ
+- ✅ **Start Menu luôn ở giữa** - Đẹp và cân đối
+- ✅ **Search window ở giữa** - Dễ nhìn và sử dụng
+- ✅ **Hỗ trợ nhiều màn hình** - Hoạt động trên setup đa màn hình
+- ✅ **Chạy nền tự động** - Không cần thao tác gì
+
+## 🚀 Cách sử dụng
+
+### 📦 Cho người dùng thông thường (Khuyên dùng)
+1. **Tải về**: [WindowsSearchOptimizer-Ready-v2025.1.1.zip](../../releases/latest)
+2. **Giải nén** ở bất kỳ đâu
+3. **Chuột phải** vào `cai-dat-tat-ca.bat` → **"Chạy với quyền quản trị"**
+4. **Xong!** Tận hưởng Windows đã được tối ưu
+
+### 🔧 Cho developer
 - **Clone**: `git clone https://github.com/Ji-Eung/WindowsSearchOptimizer.git`
-- **Cần build**: Chạy `WindowCenterApp/build/build.bat` trước
-- **Contribute**: PRs welcome!
+- **Build**: Chạy `WindowCenterApp/build/build.bat` trước
+- **Contribute**: Hoan nghênh PRs và issues!
+
+## ⚙️ Yêu cầu hệ thống
+- **Hệ điều hành**: Windows 10/11
+- **Quyền**: Cần quyền Administrator
+- **.NET 8.0**: Chỉ cần khi build từ source code
+
+## 🔄 Gỡ bỏ dễ dàng
+Chạy `go-bo-tat-ca.bat` với quyền Administrator để khôi phục tất cả về cài đặt gốc.
 
 ---
-
-## 📋 Tổng quan
-
-Bộ công cụ gồm 2 ứng dụng giúp tối ưu trải nghiệm sử dụng Windows:
-
-1. **🔍 SearchOptimizer** - Tối ưu Windows Search (giữ lại web search)
-2. **🎯 WindowCenterApp** - Tự động căn giữa Start Menu và Search
-
-## 🎯 Mục tiêu
-
-- ✅ **Giao diện gọn gàng** - Taskbar search chỉ hiển thị icon
-- ✅ **Giữ tiện ích** - Vẫn có web search và browser integration  
-- ✅ **Căn giữa tự động** - Start Menu và Search luôn ở giữa màn hình
-- ✅ **Dễ sử dụng** - Setup đơn giản, chạy tự động
-- ✅ **Có thể khôi phục** - Dễ dàng quay về cài đặt gốc
 
 ## 📁 Cấu trúc dự án
 
 ```
-Windows/
-├── setup-everything.bat       # 🚀 Setup toàn bộ (Recommended)
-├── uninstall-everything.bat   # 🗑️ Gỡ bỏ toàn bộ
-├── README.md                  # File này - hướng dẫn tổng hợp
+WindowsSearchOptimizer/
+├── cai-dat-tat-ca.bat          # 🚀 Cài đặt tất cả (Chạy file này)
+├── go-bo-tat-ca.bat            # 🗑️ Gỡ bỏ tất cả
+├── README.md                   # File hướng dẫn này
 │
-├── SearchOptimizer/           # 🔍 Windows Search Optimization
-│   ├── optimize-search.ps1    # PowerShell script chính
-│   ├── run-optimize-search.bat # Batch runner
-│   └── README.md              # Hướng dẫn Search Optimizer
+├── SearchOptimizer/            # 🔍 Tối ưu Windows Search
+│   ├── optimize-search.ps1     # Script PowerShell chính
+│   ├── chay-toi-uu-search.bat  # File chạy tối ưu search
+│   └── README.md               # Hướng dẫn chi tiết
 │
-└── WindowCenterApp/           # 🎯 Window Auto-Centering
-    ├── AutoCenterMinimal.exe  # Ứng dụng chính (cần build từ source)
-    ├── run-as-admin.bat       # Admin runner
-    ├── README.md              # Hướng dẫn Window Center
-    ├── source/                # Source code C#
-    │   ├── AutoCenterService.cs
-    │   ├── MinimalProgram.cs
-    │   ├── WindowAPI.cs
-    │   └── AutoCenterMinimal.csproj
-    └── build/                 # Build tools
-        └── build.bat
+└── WindowCenterApp/            # 🎯 Tự động căn giữa cửa sổ
+    ├── AutoCenterMinimal.exe   # Ứng dụng chính
+    ├── chay-voi-quyen-admin.bat # File chạy với quyền admin
+    ├── README.md               # Hướng dẫn chi tiết
+    ├── source/                 # Mã nguồn C#
+    └── build/                  # Công cụ build
 ```
 
-## 🚀 Hướng dẫn cài đặt nhanh
+## 🎬 Trước và sau khi dùng
 
-### ⚠️ **Lưu ý quan trọng:**
+**Trước:**
+- Taskbar có ô search to, chiếm chỗ
+- Start Menu mở ở góc màn hình
+- Cửa sổ search mở bừa bãi
+- Cortana hay xuất hiện làm phiền
 
-#### 📦 End User - Download ready-to-use:
-- **[Download ZIP file](../../releases/latest)** → Extract → Run `setup-everything.bat` as Admin
-- File exe đã build sẵn, không cần .NET SDK
-
-#### 🔧 Developer - Build từ source:
-- Clone repo này
-- **Cần .NET 8.0 SDK** để build WindowCenterApp  
-- Chạy `WindowCenterApp/build/build.bat` trước khi setup
-
-### Cách 1: Setup toàn bộ (Recommended)
-```cmd
-# Bước 1: Build WindowCenterApp
-cd WindowCenterApp/build
-build.bat
-
-# Bước 2: Setup everything
-cd ../../
-Right-click/Chuột phải "setup-everything.bat" → "Run as administrator"
-```
-
-### Cách 2: Setup từng phần
-**Bước 1: Build WindowCenterApp**
-```cmd
-cd WindowCenterApp/build
-build.bat
-```
-
-**Bước 2: Tối ưu Windows Search**
-```cmd
-cd ../../SearchOptimizer
-Right-click/Chuột phải "run-optimize-search.bat" → "Run as administrator"
-```
-
-**Bước 3: Chạy Window Center App**  
-```cmd
-cd ../WindowCenterApp
-Right-click/Chuột phải "run-as-admin.bat" → "Run as administrator"
-```
-
-### Gỡ bỏ toàn bộ:
-```
-Right-click/Chuột phải "uninstall-everything.bat" → "Run as administrator"
-```
-
-## ✅ Tính năng tổng hợp
-
-### 🔍 Tối ưu Search (SearchOptimizer):
-- ✅ **Compact taskbar** - Search icon thay vì search box
-- ✅ **Web search enabled** - Vẫn search được web
-- ✅ **Browser integration** - Mở kết quả trực tiếp browser
-- ✅ **Cortana disabled** - Tắt tính năng phiền toái
-- ✅ **Privacy balanced** - Cân bằng privacy và tiện ích
-
-### 🎯 Tự động căn giữa (WindowCenterApp):
-- ✅ **Start Menu centering** - Tự động căn giữa Start Menu
-- ✅ **Search centering** - Tự động căn giữa Windows Search
-- ✅ **Multi-monitor support** - Hỗ trợ nhiều màn hình
-- ✅ **Manual controls** - Có thể căn giữa thủ công
-- ✅ **System tray interface** - Giao diện tối giản
-
-## 🎬 Demo và cách hoạt động
-
-**Trước khi dùng:**
-- Taskbar có search box to, chiếm chỗ
-- Start Menu mở ở góc, không cân đối
-- Search window mở ở vị trí ngẫu nhiên
-- Cortana hay xuất hiện gây phiền
-
-**Sau khi dùng:**
-- Taskbar gọn với search icon nhỏ
-- Start Menu luôn ở giữa màn hình
-- Search window luôn ở giữa màn hình  
+**Sau:**
+- Taskbar gọn với icon search nhỏ
+- Start Menu luôn mở ở giữa màn hình
+- Cửa sổ search luôn ở giữa màn hình
+- Vẫn search web bình thường
 - Không còn Cortana
-- Vẫn search web được bình thường
-
-## ⚙️ Cài đặt nâng cao
-
-### Tùy chỉnh Search Optimizer:
-```powershell
-# Chỉ xem thông tin, không áp dụng
-.\optimize-search.ps1 -Help
-
-# Khôi phục cài đặt gốc
-.\optimize-search.ps1 -Restore
-```
-
-### Tùy chỉnh Window Center:
-- Right-click system tray icon để access menu
-- "Manual Center" để căn giữa thủ công
-- "Show Debug Info" để kiểm tra hoạt động
-
-## 🔄 Gỡ bỏ và khôi phục
-
-### Khôi phục Search Optimizer:
-```powershell
-cd SearchOptimizer
-.\optimize-search.ps1 -Restore
-```
-
-### Tắt Window Center:
-- Right-click system tray icon → "Exit"
-- Hoặc kill process "AutoCenterMinimal.exe"
-
-## ⚠️ Yêu cầu hệ thống
-
-- **OS:** Windows 10/11
-- **Privileges:** Administrator rights
-- **Framework:** .NET 8.0 SDK (để build WindowCenterApp)
-- **PowerShell:** 5.1+ (cho SearchOptimizer)
-
-### 📋 Yêu cầu setup:
-1. **Install .NET 8.0 SDK** từ [Microsoft .NET](https://dotnet.microsoft.com/download)
-2. **Chạy build.bat** để tạo AutoCenterMinimal.exe
-3. **Run as Administrator** cho tất cả scripts
 
 ## 🆘 Hỗ trợ
 
 **Vấn đề thường gặp:**
+- **Lỗi "Access denied"** → Chạy với quyền Administrator
+- **Search không thay đổi** → Khởi động lại Explorer hoặc máy tính
+- **App không chạy** → Kiểm tra antivirus/firewall
 
-1. **"Access denied" errors** → Chạy as Administrator
-2. **Search không thay đổi** → Restart Explorer hoặc reboot
-3. **App không khởi động** → Kiểm tra antivirus/firewall
-4. **Window không căn giữa** → Thử manual center từ tray menu
+**Báo lỗi**: [Tạo issue mới](../../issues)
 
-**Debug info:**
-- WindowCenterApp có debug menu trong system tray
-- SearchOptimizer có verbose output khi chạy
+## 📝 Thông tin
 
-## 📝 License & Credits
-
-- **License:** Free for personal use
-- **Made with:** PowerShell, C#, Windows API
-- **Compatibility:** Windows 10/11
-- **Version:** 2025.1.1
+- **Phiên bản**: 2025.1.1
+- **Tương thích**: Windows 10/11
+- **Ngôn ngữ**: Tiếng Việt
+- **Miễn phí** cho sử dụng cá nhân
 
 ---
-# 🎯 Mục tiêu: Làm cho Windows đẹp hơn, gọn hơn, tiện hơn!
+# 🎯 Mục tiêu: Làm Windows đẹp hơn, gọn hơn, tiện hơn cho người Việt!
