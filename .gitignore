@@ -26,5 +26,7 @@ ehthumbs.db
 # PowerShell execution logs
 *.ps1.log
 
-# Keep the main executable
-!WindowCenterApp/AutoCenterMinimal.exe
+# Exclude all exe files (too large for GitHub)
+*.exe
+
+# Note: Users need to build AutoCenterMinimal.exe from source

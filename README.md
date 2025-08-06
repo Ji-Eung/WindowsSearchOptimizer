@@ -31,7 +31,7 @@ Windows/
 │   └── README.md              # Hướng dẫn Search Optimizer
 │
 └── WindowCenterApp/           # 🎯 Window Auto-Centering
-    ├── AutoCenterMinimal.exe  # Ứng dụng chính
+    ├── AutoCenterMinimal.exe  # Ứng dụng chính (cần build từ source)
     ├── run-as-admin.bat       # Admin runner
     ├── README.md              # Hướng dẫn Window Center
     ├── source/                # Source code C#
@@ -45,21 +45,36 @@ Windows/
 
 ## 🚀 Hướng dẫn cài đặt nhanh / Quick Setup
 
+### ⚠️ **Lưu ý quan trọng:**
+**WindowCenterApp cần build từ source code do GitHub file size limit**
+
 ### Cách 1: Setup toàn bộ (Recommended)
 ```cmd
+# Bước 1: Build WindowCenterApp
+cd WindowCenterApp/build
+build.bat
+
+# Bước 2: Setup everything
+cd ../../
 Right-click/Chuột phải "setup-everything.bat" → "Run as administrator"
 ```
 
 ### Cách 2: Setup từng phần
-**Bước 1: Tối ưu Windows Search**
+**Bước 1: Build WindowCenterApp**
 ```cmd
-cd SearchOptimizer
+cd WindowCenterApp/build
+build.bat
+```
+
+**Bước 2: Tối ưu Windows Search**
+```cmd
+cd ../../SearchOptimizer
 Right-click/Chuột phải "run-optimize-search.bat" → "Run as administrator"
 ```
 
-**Bước 2: Chạy Window Center App**  
+**Bước 3: Chạy Window Center App**  
 ```cmd
-cd WindowCenterApp
+cd ../WindowCenterApp
 Right-click/Chuột phải "run-as-admin.bat" → "Run as administrator"
 ```
 
@@ -131,8 +146,13 @@ cd SearchOptimizer
 
 - **OS:** Windows 10/11
 - **Privileges:** Administrator rights
-- **Framework:** .NET 8.0 (cho WindowCenterApp)
+- **Framework:** .NET 8.0 SDK (để build WindowCenterApp)
 - **PowerShell:** 5.1+ (cho SearchOptimizer)
+
+### 📋 **Setup Requirements:**
+1. **Install .NET 8.0 SDK** từ [Microsoft .NET](https://dotnet.microsoft.com/download)
+2. **Chạy build.bat** để tạo AutoCenterMinimal.exe
+3. **Run as Administrator** cho tất cả scripts
 
 ## 🆘 Hỗ trợ / Support
 
