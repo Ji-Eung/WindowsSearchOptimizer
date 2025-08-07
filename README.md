@@ -1,13 +1,11 @@
-# 🖥️ Tối ưu Windows Sea### 🔄 Gỡ bỏ
-Chạy ### 🔧 Cho developer
+# 🖥️ Tối ưu Windows Sear### 🔄 Gỗ bỏ
+Chạy `go-b### 🔧 Chạy trực tiếp script PowerShellat-ca.bat` với quyền Administrator để khôi phục tất cả về cài đặt gốc.
+
+### 🔧 Cho developer
 - **Clone**: `git clone https://github.com/Ji-Eung/WindowsSearchOptimizer.git`
-- **Build**: Chạy `WindowCenterApp/build/build.bat` trước
+- **Build**: Chạy `WindowCenterApp/build/build.bat` trước khi sử dụng
 - **Chạy trực tiếp**: `powershell -ExecutionPolicy Bypass -File "toi-uu-windows.ps1"`
 
-## ⚙️ Yêu cầu hệ thống
-- **Hệ điều hành**: Windows 10/11
-- **Quyền**: Cần quyền Administrator
-- **.NET 8.0**: Chỉ cần khi build từ source code `go-bo-tat-ca.bat` với quyền Administrator để khôi phục tất cả về cài đặt gốc.
 **Bộ công cụ All-in-One tối ưu Windows cho người Việt**
 
 > 🚀 **Tải về sẵn sàng**: [Download phiên bản mới nhất](../../releases/latest) - Giải nén và chạy ngay!
@@ -77,10 +75,11 @@ WindowsSearchOptimizer/
 ├── README.md                   # File hướng dẫn này
 │
 └── WindowCenterApp/            # 🎯 Ứng dụng căn giữa cửa sổ
-    ├── AutoCenterMinimal.exe   # Ứng dụng chính
     ├── source/                 # Mã nguồn C#
-    └── build/                  # Công cụ build
+    └── build/                  # Công cụ build (tạo AutoCenterMinimal.exe)
 ```
+
+> ⚠️ **Lưu ý**: File `AutoCenterMinimal.exe` cần build từ source code vì quá lớn để đưa vào Git.
 
 ## 🎬 Trước và sau khi dùng
 
