@@ -1,12 +1,15 @@
-# 🖥️ Tối ưu Windows Sear### 🔄 Gỗ bỏ
-Chạy `go-b### 🔧 Chạy trực tiếp script PowerShellat-ca.bat` với quyền Administrator để khôi phục tất cả về cài đặt gốc.
+# WindowsSearchOptimizer v2025.1.2
+
+### 🔧 Cho người dùng
+- Chạy `cai-dat-tat-ca` với quyền Administrator để cài đặt chương trình.
+- Chạy `go-bo-tat-ca` với quyền Administrator để khôi phục tất cả về cài đặt gốc.
 
 ### 🔧 Cho developer
 - **Clone**: `git clone https://github.com/Ji-Eung/WindowsSearchOptimizer.git`
 - **Build**: Chạy `WindowCenterApp/build/build.bat` trước khi sử dụng
 - **Chạy trực tiếp**: `powershell -ExecutionPolicy Bypass -File "toi-uu-windows.ps1"`
 
-**Bộ công cụ All-in-One tối ưu Windows cho người Việt**
+**Bộ công cụ tối ưu WindowsSearch**
 
 > 🚀 **Tải về sẵn sàng**: [Download phiên bản mới nhất](../../releases/latest) - Giải nén và chạy ngay!
 
@@ -19,18 +22,17 @@ Chạy `go-b### 🔧 Chạy trực tiếp script PowerShellat-ca.bat` với quy�
 ✅ **Tắt Cortana** - Không còn bị làm phiền  
 ✅ **Hỗ trợ nhiều màn hình** - Hoạt động trên setup đa màn hình  
 ✅ **Tự động khởi động** - Có thể chạy cùng Windows (tùy chọn)  
-✅ **All-in-One** - Gộp tất cả tính năng trong 1 script
 
 ## 🚀 Cách sử dụng
 
 ### 📦 Cài đặt (Khuyên dùng)
-1. **Tải về**: [WindowsSearchOptimizer-v2025.1.2.zip](../../releases/latest)
-2. **Giải nén** ở bất kỳ đâu
-3. **Chuột phải** vào `cai-dat-tat-ca.bat` → **"Chạy với quyền quản trị"**
-4. **Xong!** Tận hưởng Windows đã được tối ưu
+- **Tải về**: [WindowsSearchOptimizer-v2025.1.2.zip](../../releases/latest)
+- **Giải nén** ở bất kỳ đâu
+- **Chuột phải** vào `cai-dat-tat-ca.bat` → **"Chạy với quyền quản trị"**
+- **Xong!** Tận hưởng Windows đã được tối ưu
 
 ### � Gỡ bỏ
-Chạy `go-bo-tat-ca.bat` với quyền Administrator để khôi phục tất cả về cài đặt gốc.
+- Chạy `go-bo-tat-ca.bat` với quyền Administrator để khôi phục tất cả về cài đặt gốc.
 
 ### �🔧 Cho developer
 - **Clone**: `git clone https://github.com/Ji-Eung/WindowsSearchOptimizer.git`
@@ -85,13 +87,11 @@ WindowsSearchOptimizer/
 
 **Trước:**
 - Taskbar có ô search to, chiếm chỗ
-- Start Menu mở ở góc màn hình
 - Cửa sổ search mở bừa bãi
 - Cortana hay xuất hiện làm phiền
 
 **Sau:**
 - Taskbar gọn với icon search nhỏ
-- Start Menu luôn mở ở giữa màn hình
 - Cửa sổ search luôn ở giữa màn hình
 - Vẫn search web bình thường
 - Không còn Cortana
@@ -111,7 +111,7 @@ WindowsSearchOptimizer/
 - **Phiên bản**: 2025.1.2
 - **Tương thích**: Windows 10/11
 - **Ngôn ngữ**: Tiếng Việt
-- **Miễn phí** cho sử dụng cá nhân
+- **Miễn phí**: cho sử dụng cá nhân
 
 ---
 # 🎯 Mục tiêu: Làm Windows đẹp hơn, gọn hơn, tiện hơn cho người Việt!
