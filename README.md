@@ -1,35 +1,43 @@
-# 🖥️ Tối ưu Windows Search và Desktop
-**Bộ công cụ tối ưu Windows cho người Việt**
+# 🖥️ Tối ưu Windows Sea### 🔄 Gỡ bỏ
+Chạy ### 🔧 Cho developer
+- **Clone**: `git clone https://github.com/Ji-Eung/WindowsSearchOptimizer.git`
+- **Build**: Chạy `WindowCenterApp/build/build.bat` trước
+- **Chạy trực tiếp**: `powershell -ExecutionPolicy Bypass -File "toi-uu-windows.ps1"`
+
+## ⚙️ Yêu cầu hệ thống
+- **Hệ điều hành**: Windows 10/11
+- **Quyền**: Cần quyền Administrator
+- **.NET 8.0**: Chỉ cần khi build từ source code `go-bo-tat-ca.bat` với quyền Administrator để khôi phục tất cả về cài đặt gốc.
+**Bộ công cụ All-in-One tối ưu Windows cho người Việt**
 
 > 🚀 **Tải về sẵn sàng**: [Download phiên bản mới nhất](../../releases/latest) - Giải nén và chạy ngay!
 
 ## 🎯 Tính năng chính
 
-### 🔍 Tối ưu Windows Search
-- ✅ **Taskbar gọn gàng** - Chỉ hiển thị icon thay vì ô search to
-- ✅ **Vẫn search web được** - Giữ nguyên tính năng tìm kiếm web
-- ✅ **Tắt Cortana** - Không còn bị làm phiền
-- ✅ **Bảo mật hợp lý** - Cân bằng privacy và tiện ích
-
-### 🎯 Tự động căn giữa cửa sổ
-- ✅ **Start Menu luôn ở giữa** - Đẹp và cân đối
-- ✅ **Search window ở giữa** - Dễ nhìn và sử dụng
-- ✅ **Hỗ trợ nhiều màn hình** - Hoạt động trên setup đa màn hình
-- ✅ **Chạy nền tự động** - Không cần thao tác gì
-- ✅ **Tự động khởi động** - Có thể chạy cùng Windows (tùy chọn)
+✅ **Taskbar gọn gàng** - Chỉ hiển thị icon search thay vì ô to  
+✅ **Start Menu căn giữa** - Luôn mở ở giữa màn hình  
+✅ **Search window căn giữa** - Dễ nhìn và sử dụng  
+✅ **Vẫn search web được** - Giữ nguyên tính năng tìm kiếm web  
+✅ **Tắt Cortana** - Không còn bị làm phiền  
+✅ **Hỗ trợ nhiều màn hình** - Hoạt động trên setup đa màn hình  
+✅ **Tự động khởi động** - Có thể chạy cùng Windows (tùy chọn)  
+✅ **All-in-One** - Gộp tất cả tính năng trong 1 script
 
 ## 🚀 Cách sử dụng
 
-### 📦 Cho người dùng thông thường (Khuyên dùng)
-1. **Tải về**: [WindowsSearchOptimizer-Ready-v2025.1.1.zip](../../releases/latest)
+### 📦 Cài đặt (Khuyên dùng)
+1. **Tải về**: [WindowsSearchOptimizer-v2025.1.2.zip](../../releases/latest)
 2. **Giải nén** ở bất kỳ đâu
 3. **Chuột phải** vào `cai-dat-tat-ca.bat` → **"Chạy với quyền quản trị"**
 4. **Xong!** Tận hưởng Windows đã được tối ưu
 
-### 🔧 Cho developer
+### � Gỡ bỏ
+Chạy `go-bo-tat-ca.bat` với quyền Administrator để khôi phục tất cả về cài đặt gốc.
+
+### �🔧 Cho developer
 - **Clone**: `git clone https://github.com/Ji-Eung/WindowsSearchOptimizer.git`
 - **Build**: Chạy `WindowCenterApp/build/build.bat` trước
-- **Contribute**: Hoan nghênh PRs và issues!
+- **Chạy trực tiếp**: `powershell -ExecutionPolicy Bypass -File "toi-uu-windows.ps1"`
 
 ## ⚙️ Yêu cầu hệ thống
 - **Hệ điều hành**: Windows 10/11
@@ -41,32 +49,35 @@ Chạy `go-bo-tat-ca.bat` với quyền Administrator để khôi phục tất c
 
 ## ⚙️ Tùy chọn nâng cao
 
-### 🚀 Quản lý Startup
-- **Thêm vào Startup**: `WindowCenterApp/them-vao-startup.bat`
-- **Xóa khỏi Startup**: `WindowCenterApp/xoa-khoi-startup.bat`
-- AutoCenter sẽ tự động khởi động cùng Windows nếu được thêm vào Startup
+### 🔧 Chạy trực tiếp script PowerShell
+
+### � Chạy trực tiếp script PowerShell
+```powershell
+# Cài đặt
+powershell -ExecutionPolicy Bypass -File "toi-uu-windows.ps1"
+
+# Gỡ bỏ 
+powershell -ExecutionPolicy Bypass -File "toi-uu-windows.ps1" -Restore
+```
+
+### 📊 Thông tin kỹ thuật
+- **Script chính**: `toi-uu-windows.ps1` - Gộp tất cả tính năng
+- **Không xung đột**: Tất cả trong 1 file, tránh conflict
+- **Dễ bảo trì**: Cấu trúc đơn giản, ít file rác
 
 ---
 
-## 📁 Cấu trúc dự án
+## 📁 Cấu trúc dự án (Đơn giản)
 
 ```
 WindowsSearchOptimizer/
 ├── cai-dat-tat-ca.bat          # 🚀 Cài đặt tất cả (Chạy file này)
 ├── go-bo-tat-ca.bat            # 🗑️ Gỡ bỏ tất cả
+├── toi-uu-windows.ps1          # 💎 Script chính All-in-One
 ├── README.md                   # File hướng dẫn này
 │
-├── SearchOptimizer/            # 🔍 Tối ưu Windows Search
-│   ├── optimize-search.ps1     # Script PowerShell chính
-│   ├── chay-toi-uu-search.bat  # File chạy tối ưu search
-│   └── README.md               # Hướng dẫn chi tiết
-│
-└── WindowCenterApp/            # 🎯 Tự động căn giữa cửa sổ
+└── WindowCenterApp/            # 🎯 Ứng dụng căn giữa cửa sổ
     ├── AutoCenterMinimal.exe   # Ứng dụng chính
-    ├── chay-voi-quyen-admin.bat # File chạy với quyền admin
-    ├── them-vao-startup.bat    # Thêm vào Windows Startup
-    ├── xoa-khoi-startup.bat    # Xóa khỏi Windows Startup
-    ├── README.md               # Hướng dẫn chi tiết
     ├── source/                 # Mã nguồn C#
     └── build/                  # Công cụ build
 ```
@@ -98,7 +109,7 @@ WindowsSearchOptimizer/
 
 ## 📝 Thông tin
 
-- **Phiên bản**: 2025.1.1
+- **Phiên bản**: 2025.1.2
 - **Tương thích**: Windows 10/11
 - **Ngôn ngữ**: Tiếng Việt
 - **Miễn phí** cho sử dụng cá nhân
