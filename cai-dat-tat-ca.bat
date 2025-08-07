@@ -23,13 +23,17 @@ call chay-toi-uu-search.bat
 
 echo.
 echo ===== BUOC 2: Can giua cua so ===== 
-echo ===== BUOC 2: Ung dung can giua cua so =====
-cd /d "%~dp0\WindowCenterApp"
-echo Starting Window Center App...
-echo Dang khoi dong Window Center App...
 cd /d "%~dp0\WindowCenterApp"
 echo Dang khoi dong ung dung can giua cua so...
 call chay-voi-quyen-admin.bat
+
+echo.
+echo ===== BUOC 3: Them vao Startup (Tu chon) =====
+set /p startup_choice="Ban co muon AutoCenter tu dong khoi dong cung Windows? (Y/N): "
+if /i "%startup_choice%" equ "Y" (
+    echo Dang them vao Startup...
+    call them-vao-startup.bat
+)
 
 echo.
 echo 🎉 Cai dat hoan thanh!
@@ -39,6 +43,9 @@ echo    • Taskbar search chi con icon nho gon
 echo    • Tim kiem web van hoat dong binh thuong
 echo    • Start Menu va Search luon o giua man hinh
 echo    • Ung dung can giua chay tu dong trong system tray
+if /i "%startup_choice%" equ "Y" (
+    echo    • AutoCenter se tu dong khoi dong cung Windows
+)
 echo.
 echo Ban co the test thu bang cach bam Start hoac tim kiem!
 echo.

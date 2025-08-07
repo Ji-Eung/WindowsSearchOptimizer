@@ -16,6 +16,7 @@
 - ✅ **Search window ở giữa** - Dễ nhìn và sử dụng
 - ✅ **Hỗ trợ nhiều màn hình** - Hoạt động trên setup đa màn hình
 - ✅ **Chạy nền tự động** - Không cần thao tác gì
+- ✅ **Tự động khởi động** - Có thể chạy cùng Windows (tùy chọn)
 
 ## 🚀 Cách sử dụng
 
@@ -38,6 +39,13 @@
 ## 🔄 Gỡ bỏ dễ dàng
 Chạy `go-bo-tat-ca.bat` với quyền Administrator để khôi phục tất cả về cài đặt gốc.
 
+## ⚙️ Tùy chọn nâng cao
+
+### 🚀 Quản lý Startup
+- **Thêm vào Startup**: `WindowCenterApp/them-vao-startup.bat`
+- **Xóa khỏi Startup**: `WindowCenterApp/xoa-khoi-startup.bat`
+- AutoCenter sẽ tự động khởi động cùng Windows nếu được thêm vào Startup
+
 ---
 
 ## 📁 Cấu trúc dự án
@@ -56,6 +64,8 @@ WindowsSearchOptimizer/
 └── WindowCenterApp/            # 🎯 Tự động căn giữa cửa sổ
     ├── AutoCenterMinimal.exe   # Ứng dụng chính
     ├── chay-voi-quyen-admin.bat # File chạy với quyền admin
+    ├── them-vao-startup.bat    # Thêm vào Windows Startup
+    ├── xoa-khoi-startup.bat    # Xóa khỏi Windows Startup
     ├── README.md               # Hướng dẫn chi tiết
     ├── source/                 # Mã nguồn C#
     └── build/                  # Công cụ build
@@ -75,6 +85,7 @@ WindowsSearchOptimizer/
 - Cửa sổ search luôn ở giữa màn hình
 - Vẫn search web bình thường
 - Không còn Cortana
+- Có thể tự động khởi động cùng Windows
 
 ## 🆘 Hỗ trợ
 

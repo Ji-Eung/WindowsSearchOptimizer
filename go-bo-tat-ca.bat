@@ -25,6 +25,16 @@ if %ERRORLEVEL% equ 0 (
 )
 
 echo.
+echo ===== Xoa khoi Windows Startup =====
+cd /d "%~dp0\WindowCenterApp"
+reg delete "HKCU\Software\Microsoft\Windows\CurrentVersion\Run" /v "WindowsSearchOptimizer" /f >nul 2>&1
+if %ERRORLEVEL% equ 0 (
+    echo ✅ Da xoa AutoCenter khoi Startup
+) else (
+    echo ⚠️  AutoCenter khong co trong Startup
+)
+
+echo.
 echo ===== Khoi phuc cai dat tim kiem =====
 cd /d "%~dp0\SearchOptimizer"
 
